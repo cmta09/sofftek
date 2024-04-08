@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import './components/MenuNavegacion.css';
+import Fondo from './components/FondoInicio'
+import IniciarSesion from './components/Paginas/IniciarSesion';
+import CrearCuenta from './components/Paginas/CrearCuenta';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+const App = () => {
+  const [selectedOption, setSelectedOption] = useState('IniciarSesion');
+
+  const handleSelect = (option) => {
+    setSelectedOption(option); // Actualiza el estado con la opción seleccionada
+  };
+
+  return (
+    <div>
+      <Fondo />
+      {selectedOption === 'IniciarSesion' ? (
+        <IniciarSesion onSelect={handleSelect} />
+      ) : (
+        <CrearCuenta onSelect={handleSelect}/>
+      )}
+    </div>
+  );
+};
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export default App;
