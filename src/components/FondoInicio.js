@@ -1,5 +1,5 @@
 import React from "react";
-import './MenuNavegacion.css'
+import './FondoInicio.css'
 
 class MenuSuperior extends React.Component{
     render(){

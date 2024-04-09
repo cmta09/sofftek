@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import '../MenuNavegacion.css'
+import './CrearCuenta.css'
 import Logo from '../Img/LogoGris.png'
 import { MdOutlineEmail } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import { IoIosLock } from "react-icons/io"
+import { Link } from "react-router-dom";
 
 
 
@@ -104,7 +105,9 @@ const CrearCuenta = ({ onSelect }) => {
                 <p class="Link" onClick={() => handleDivClick('IniciarSesion')}>Crear una cuenta</p>
             </div>
             <div className="Boton">
-                <button className="BotonIniciarSesion">ACCEDER</button>
+                <Link to={"/Menu"} style={{ textDecoration: 'none' , cursor:'default'}}>
+                    <button className="BotonIniciarSesion">ACCEDER</button>
+                </Link>
             </div>
         </div>
     );

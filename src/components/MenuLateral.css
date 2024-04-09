@@ -1,0 +1,88 @@
+/* Menu Lateral*/
+.lateral {
+    width: 7%;
+    height: 90vh;
+    background-color: #4B4B4B;
+    color: white;
+    margin: 0;
+    min-width: 80px;
+}
+
+.menuLateral{
+    width: 100%;
+    height: 40%;
+}
+
+.EspacioMuerto{
+    width: 100%;
+    height: 45%;
+}
+
+.Chatbot{
+    width: 100%;
+    height: 15%;
+}
+
+.lateral, .menuLateral{
+    display: flex;
+    flex-direction: column;
+}
+
+.BotonCuadrado, .menuLateral, .Chatbot{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+}
+
+.BotonMenuLateral{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    cursor: pointer;
+}
+
+.BotonCuadrado, .BotonCuadrado2, .BotonSeleccion{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    width: 63%;
+}
+
+.BotonSeleccion{
+    background-color: #9784F8;
+    border: solid 3px #FFFFFF;
+    height: 65%;
+    max-height: 70px;
+}
+
+.BotonCuadrado{
+    background-color: #373737;
+    border: solid 3px #747474;
+    height: 65%;
+    max-height: 70px;
+}
+
+.BotonCuadrado2{
+    background-color: #E59EDD;
+    border: solid 3px #FFFFFF;
+    height: 52%;
+    max-height: 70px;
+
+}
+
+.IconoMenu{
+    color: #747474;
+    font-size: 260%;
+}
+
+.BotonSeleccion>.IconoMenu{
+    color: #FFFFFF;
+    font-size: 260%;
+}
+
+.IconoChat{
+    color: #FFFFFF;
+    font-size: 250%;
+}

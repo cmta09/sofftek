@@ -1,10 +1,10 @@
 import React from "react";
-import './MenuNavegacion.css'
+import './Resumen.css'
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { GrDownload } from "react-icons/gr";
 
-import Checkbox from "./Checkbox";
+import Checkbox from "../components/Checkbox";
 
 class Resumen extends React.Component{
 

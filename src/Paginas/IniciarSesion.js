@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import '../MenuNavegacion.css'
+import './IniciarSesion.css'
 import Logo from '../Img/LogoGris.png'
 import { MdOutlineEmail } from "react-icons/md";
 import { IoIosLock } from "react-icons/io"
-
-
+import { Link } from "react-router-dom";
 
 const IniciarSesion = ({onSelect}) => {
     // Estado para mantener el div seleccionado
@@ -52,7 +51,9 @@ const IniciarSesion = ({onSelect}) => {
                 <p class="Link" onClick={() => handleDivClick('CrearCuenta')}>Crear una cuenta</p>
             </div>
             <div className="Boton">
-                <button className="BotonIniciarSesion">ACCEDER</button>
+                <Link to={"/Individual"} style={{ textDecoration: 'none' , cursor:'default'}}>
+                    <button className="BotonIniciarSesion">ACCEDER</button>
+                </Link>
             </div>
         </div>
     );

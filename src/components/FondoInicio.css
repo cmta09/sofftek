@@ -1,0 +1,146 @@
+
+/*Fondo*/
+
+.Fondo{
+    background-color: #FDFDFD;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.EsquinaSuperior{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content:right;
+}
+
+.Triangulo{
+    font-size: 0px; 
+    line-height: 0%; 
+    width: 0px;
+    border-top: 25vh solid #4B4B4B;
+    border-left: 55vh solid #FDFDFD;
+}
+
+.Espacio{
+    flex-grow: 1;
+}
+
+.EsquinaInferior{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: left;
+}
+
+.Triangulo2{
+    font-size: 0px; 
+    line-height: 0%; 
+    width: 0px;
+    border-bottom: 25vh solid #4B4B4B;
+    border-right: 55vh solid #FDFDFD;
+}
+
+.Circulo{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: #AEAEAE;
+    position: fixed;
+}
+
+.EsquinaSuperior .Circulo{
+    top: 5vh; 
+    right: 13vh;
+}
+
+.EsquinaInferior .Circulo{
+    bottom: 5vh;
+    left: 13vh;
+}
+
+.Circulo2{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    background-color: #747474;
+    position: fixed;
+}
+
+.EsquinaSuperior .Circulo2{
+    top:10vh;
+    right: 8vh;
+}
+
+.EsquinaInferior .Circulo2{
+    bottom:5vh;
+    left: 9vh;
+}
+
+.Circulo3, .Circulo4, .Circulo5{
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: #AEAEAE;
+    position: fixed;
+}
+
+.EsquinaSuperior .Circulo3{
+    top: 2vh;
+    right: 28vh;
+}
+
+.EsquinaSuperior .Circulo4{
+    top: 20vh;
+    right: 30vh;
+}
+
+.EsquinaSuperior .Circulo5{
+    top: 25vh;
+    right: 10vh;
+}
+
+.EsquinaInferior .Circulo3{
+    bottom: 5vh;
+    left: 30vh;
+}
+
+.EsquinaInferior .Circulo4{
+    bottom: 20vh;
+    left: 30vh;
+}
+
+.EsquinaInferior .Circulo5{
+    bottom: 25vh;
+    left: 10vh;
+}
+
+.Circulo6, .Circulo7{
+    width: 1vh;
+    height: 1vh;
+    border-radius: 50%;
+    background-color: #AEAEAE;
+    position: fixed;
+}
+
+.EsquinaSuperior .Circulo6{
+    top: 6vh;
+    right: 34vh;
+}
+
+.EsquinaSuperior .Circulo7{
+    top: 23vh;
+    right: 20vh;
+}
+
+.EsquinaInferior .Circulo6{
+    bottom: 11vh;
+    left: 34vh;
+}
+
+.EsquinaInferior .Circulo7{
+    bottom: 23vh;
+    left: 20vh;
+}

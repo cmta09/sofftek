@@ -1,5 +1,5 @@
 import React from "react";
-import './MenuNavegacion.css'
+import './TableroAnalisis.css'
 
 class TableroDeAnalisis extends React.Component{
     render(){

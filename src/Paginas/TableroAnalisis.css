@@ -1,0 +1,94 @@
+/* Tablero de Analisis*/
+.Tablero{
+    display: flex;
+    width: 93%;
+    height: 89.2vh;
+    margin-top: 0.8vh;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+.Titulo{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+}
+
+div.Titulo>p{
+    margin-left: 1%;
+}
+
+div.Titulo>p, div.TituloGraph>p, div.TituloBusqueda>p{
+    padding-left: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2vh;
+}
+
+div.Titulo>p>b, div.TituloGraph>p{
+    color: #49BEAA;
+}
+
+.FilaSuperior{
+    width: calc(100%-7vh);
+    height: 36vh;
+    /*background-color: #9784F8;*/
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+}
+
+.FilaInferior{
+    width: calc(100%-7vh);
+    height: 36vh;
+    /*background-color: #E59EDD;*/
+    display: flex;
+    align-items: center;
+    padding: 3vh;
+}
+
+.PanelTerminosFre, .PanelBiblio, .PanelAnalisis{
+    height: 38vh;
+    background-color: #FDFDFD;
+    width: 49.8vh;
+    border: 3px solid #F2F2F2;
+}
+
+.PanelAnalisis{
+    width: 45vh;
+}
+
+.PanelFrecuencia, .PanelMalla, .PanelTemas{
+    height: 38vh;
+    background-color:#FDFDFD ;
+    width: 60vh;
+    border: 3px solid #F2F2F2;
+}
+
+.PanelMalla{
+    width: 55vh;
+}
+
+.PanelTerminosFre, .PanelFrecuencia, .PanelAnalisis, .PanelMalla{
+    margin-right: 4vh;
+}
+
+.TituloGraph{
+    width: 100%;
+    height: 15%;
+    border-bottom: solid 3px #F2F2F2;
+    display: flex;
+    align-items: center;
+}
+
+.ContenidoGraph{
+    width: 100%;
+    height: calc(85%-3px);
+}
+
+div.TituloGraph>p{
+    font-weight: 500;
+}

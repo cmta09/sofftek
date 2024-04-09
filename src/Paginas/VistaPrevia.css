@@ -1,0 +1,13 @@
+.VistaPrevia{
+    display: flex;
+    justify-content: center;
+    width: 93%;
+    height: 89.2vh;
+    margin-top: 0.8vh;
+}
+
+.PDF{
+    width: 60%;
+    height: 100%;
+    background-color: #e6e3e3;
+}

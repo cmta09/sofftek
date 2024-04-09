@@ -1,4 +1,4 @@
-import './MenuNavegacion.css'
+import '../Paginas/Resumen.css'
 import { useState } from "react";
 
 const Checkbox = ({ checked}) => {

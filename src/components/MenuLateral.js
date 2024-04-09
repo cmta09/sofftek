@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './MenuNavegacion.css'
+import './MenuLateral.css'
 import { LiaFileAlt } from "react-icons/lia";
 import { FaRegChartBar } from "react-icons/fa";
 import { TfiClip } from "react-icons/tfi";
