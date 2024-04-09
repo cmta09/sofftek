@@ -38,6 +38,7 @@ const IniciarSesion = ({onSelect}) => {
             <div className="Contrasena">
                 <div className="TituloInput">
                     <p>Contrasena</p>
+                    <p style={{color:'#D86ECC', paddingLeft: '42%', cursor:'pointer', fontSize:'1em'}}>¿Olvidaste tu contrasena?</p>
                 </div>
                 <div className="Input">
                     <div className="Icono">
