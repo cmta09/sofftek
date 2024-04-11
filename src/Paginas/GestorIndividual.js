@@ -6,20 +6,12 @@ import { TfiViewGrid } from "react-icons/tfi";
 import { BiSortAlt2 } from "react-icons/bi";
 import { IoMdSearch } from "react-icons/io";
 import { MdOutlineFilterAlt } from "react-icons/md";
-import { BsFileEarmarkText } from "react-icons/bs";
+import Documento from "../components/Documento";
 
 import './GestorIndividual.css'
 
 
 const GestorIndividual = () => {
-
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        // 👇️ toggle
-        setIsActive(current => !current);
-
-    };
 
     const [files, setFiles] = useState([]);
 
@@ -98,17 +90,7 @@ const GestorIndividual = () => {
                         <input id="file-upload" type="file" onChange={handleFileChange} multiple />
                     </div>
                     {files.map((file, index) => (
-                    <div key={index} className="file-icon file" style={{
-                        backgroundColor: isActive ? '#CDEFEB' : ''
-                      }}
-                      onClick={handleClick}>
-                        <div className='icon' 
-                            style={{
-                            color: isActive ? 'white' : '#c8c8c8'
-                            }}>
-                        <BsFileEarmarkText /></div>
-                        <div className='nombre'><p>File{index}</p></div>
-                    </div>
+                        <Documento index={index} />
                     ))}
                 </div>
             </div>
