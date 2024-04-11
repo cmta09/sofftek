@@ -4,6 +4,7 @@ import Inicio from './Paginas/Inicio';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ArchivosIndividuales from './ArchivosIndividual';
 import Gestor from './Paginas/GestorArchivosIndividuales';
+import Contenedor from './components/ContenedorArchivos';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/Individual",
     element: <Gestor/>,
+  },
+  {
+    path: "/Upload",
+    element: <Contenedor/>,
   },
 ]);
 

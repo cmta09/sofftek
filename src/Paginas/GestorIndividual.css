@@ -1,0 +1,239 @@
+.GestorIndividual{
+    display: flex;
+    width: 100%;
+    height: 89.5vh;
+    margin-top: 0.2vh;
+    background-color: #FDFDFD;
+    flex-direction: column;
+}
+
+.GestorIndividual .BarraHerramientas{
+    width: 100%;
+    height: 8%;
+}
+
+.GestorIndividual .Decoracion{
+    width: 100%;
+    height: 7%;
+    background-color: #F2F2F2;
+}
+
+.GestorIndividual .Barra{
+    width: 100%;
+    height: 86%;
+    background-color: #FDFDFD;
+    display: flex;
+    align-items: center;
+}
+
+.GestorIndividual .NuevoFolder{
+    margin-left: 1%;
+    width: 7%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GestorIndividual .Division{
+    width: 0.1%;
+    height: 70%;
+    background-color: #dcdcdc;
+}
+
+.GestorIndividual .Herramientas2{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GestorIndividual .Herramientas3{
+    width: 16%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GestorIndividual .BarraHerramientas .Espacio{
+    width: auto;
+    height: 100%;
+}
+
+.GestorIndividual .BarraBusqueda{
+    width: 35%;
+    height: 100%;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.GestorIndividual .BarraHerramientas p{
+    font-size: 90%;
+}
+
+.GestorIndividual .BarraHerramientas .Icono{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    color: #5DCBBE;
+    font-weight: 600;
+}
+
+.GestorIndividual .BarraHerramientas .Texto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.2em;
+}
+
+.GestorIndividual .Delete, .Rename{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GestorIndividual .Herramientas2 .Icono{
+    width: 100%;
+    font-size: 1.8em;
+    justify-content: center;
+}
+
+.GestorIndividual .Delete{
+    margin-left: 5%;
+}
+
+.GestorIndividual .NuevoFolder{
+    margin-right: 1%;
+}
+
+.GestorIndividual .Rename{
+    margin-right: 5%;
+}
+
+.GestorIndividual .Vista, .Ordenar{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GestorIndividual .Ordenar{
+    margin-right: 5%;
+}
+
+.GestorIndividual .Vista .Icono{
+    font-size: 1.3em;
+}
+
+.GestorIndividual .Ordenar .Icono{
+    font-size: 1.8em;
+}
+
+.GestorIndividual .Buscar{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.GestorIndividual .Buscar>.Icono{
+    width: 10%;
+    height: 100%;
+    color: #747474;
+}
+
+.GestorIndividual .Buscar>.Input{
+    width: 80%;
+    height: 100%;
+}
+
+.GestorIndividual .Buscar>.Input>input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    color: #9b9a9a;
+    letter-spacing: 1px;
+}
+
+.GestorIndividual .Input>input::placeholder{
+    color: #AEAEAE;
+}
+
+.file-lines {
+    width: calc(100%-5vh);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vh;
+    height: 90vh;
+    overflow-y: scroll;
+    scrollbar-width: 1vh;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    display: none;
+  }
+
+.upload-icon {
+    cursor: pointer;
+}
+
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 17.5vh); /* Ancho fijo para cada icono de archivo */
+    grid-gap: 5vh; /* Espacio entre iconos */
+}
+
+.file-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    height: 20vh;
+}
+
+.file-icon:focus{
+    background-color: #5DCBBE;
+}
+
+.file-icon.file .icon{
+    width: 100%;
+    height: 80%;
+    color: #c8c8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-icon .icon{
+    width: 100%;
+    height: 85%;
+    font-size: 6.5em;
+}
+
+.file-icon.file .nombre{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #747474;
+    font-size: 1em;
+}

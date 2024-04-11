@@ -8,6 +8,8 @@
     background-color: #FDFDFD;
     margin: 0;
     box-shadow: 0 2px 5px rgb(111, 111, 111);
+    position: relative;
+    z-index: 1;
 }
 
 .logo{
@@ -36,7 +38,7 @@
 }
 
 .ImgLogo{
-    margin-left: 4%;
+    margin-left: 10%;
     margin-top: 0;
     width: 60%;
     padding-bottom: 2%;
@@ -48,29 +50,48 @@
 }
 
 .Pestana{
-    width: 20vh;
+    width: fit-content;
     height: 8vh;
-    background-color: #747474;
+    background-color: #D1D1D1;
     color: white;
     overflow: hidden;
     border-radius: 15px 5px 0px 0px;
     position: relative;
-
+    padding-left: 2%;
+    padding-right: 3%;
+    top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .superior .Muerto{
     display: flex;
     width: 70%;
-    background-color: fuchsia;
 }
 
 .superior .Muerto .Triangulo{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 40px 30px 0;
+    border-width: 0 35px 30px 0;
     border-color: transparent #FDFDFD transparent transparent;
     right: 0;
     top: 0;
     position: absolute;
+}
+
+#SeleccionPestana{
+    background-color: #747474;
+}
+
+#SeleccionPestana p{
+    color:#F2F2F2
+}
+
+.Pestana p{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 5%;
+    color: #747474;
 }

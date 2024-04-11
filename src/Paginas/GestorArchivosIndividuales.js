@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuSuperior from '../components/MenuSuperiorInicio';
+import GestorIndividual from './GestorIndividual';
 import { BrowserRouter } from 'react-router-dom';
-import Menu from '../components/Menusuperior';
 
 const Gestor = () => {
 
   return (
     <div>
       <MenuSuperior />
-      <Menu/>
+      <GestorIndividual />
     </div>
   );
 };

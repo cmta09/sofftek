@@ -1,0 +1,18 @@
+.file-lines {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .file-line {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+  }
+  
+  .file-icon {
+    margin-right: 10px;
+  }
+  
+  .upload-icon label {
+    cursor: pointer;
+  }

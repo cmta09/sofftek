@@ -4,7 +4,7 @@ import Logo from "../Img/Logo.png"
 import './MenuSuperior.css'
 import { Link } from "react-router-dom";
 
-class MenuSuperior extends React.Component{
+class MenuSuperiorInicial extends React.Component{
     render(){
         return(
             <div class = "superior">
@@ -13,7 +13,18 @@ class MenuSuperior extends React.Component{
                     <img src={Logo} alt="Logo" class="ImgLogo"></img>
                     </Link>
                 </div>
-                <div className="Muerto"></div>
+                <div className="Muerto">
+                    <div className="Pestana" id="SeleccionPestana">
+                        <p>ANÁLISIS</p>
+                        <div className="Triangulo">
+                        </div>
+                    </div>
+                    <div className="Pestana">
+                        <p>COMPARACIÓN</p>
+                        <div className="Triangulo">
+                        </div>
+                    </div>
+                </div>
                 <div class = "BotonPerfil">
                     <div class="BotonCirculo">
                         <FaUser class="UserIcon"/>
@@ -24,4 +35,4 @@ class MenuSuperior extends React.Component{
     }
 }
 
-export default MenuSuperior;
+export default MenuSuperiorInicial;
