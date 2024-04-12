@@ -14,11 +14,16 @@ import './GestorIndividual.css'
 const GestorIndividual = () => {
 
     const [files, setFiles] = useState([]);
+    const [activeIndex, setActiveIndex] = useState(null);
 
     const handleFileChange = (e) => {
         const selectedFiles = Array.from(e.target.files);
         setFiles([...files, ...selectedFiles]);
     };
+    const handleDocumentoClick = (index) => {
+        setActiveIndex(index === activeIndex ? null : index);
+      };
+    
     return(
         <div class = "GestorIndividual">
             <div className="BarraHerramientas">
@@ -90,7 +95,11 @@ const GestorIndividual = () => {
                         <input id="file-upload" type="file" onChange={handleFileChange} multiple />
                     </div>
                     {files.map((file, index) => (
-                        <Documento index={index} />
+                        <Documento 
+                            index={index}
+                            isActive={index === activeIndex}
+                            onClick={() => handleDocumentoClick(index)}
+                        />
                     ))}
                 </div>
             </div>

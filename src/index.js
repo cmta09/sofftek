@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ArchivosIndividuales from './ArchivosIndividual';
 import Gestor from './Paginas/GestorArchivosIndividuales';
 import Contenedor from './components/ContenedorArchivos';
+import Loading from './components/Loading';
+import Recuperar from './Paginas/RecuperarContra';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
   {
     path: "/Upload",
     element: <Contenedor/>,
+  },
+  {
+    path: "/Loading",
+    element: <Loading/>,
+  },
+  {
+    path: "/Recuperar",
+    element: <Recuperar/>,
   },
 ]);
 
