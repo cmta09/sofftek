@@ -1,0 +1,96 @@
+.MenuPerfil{
+    height: 30vh;
+    width: 20vh;
+    top: 9.5vh;
+    right: 4vh;
+    position: absolute;
+}
+
+.Apuntador{
+    height: 2.7vh;
+    width: 100%;
+    position: relative;
+}
+
+.Rectangulo{
+    height: 27.3vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    border: 0.2vh solid #D9D9D9;
+}
+
+.MenuPerfil .Apuntador .Triangulo{
+    width: 0;
+    height: 0;
+    border-right: 2.3vh solid transparent;
+    border-left: 2.3vh solid transparent;
+    border-bottom: 3vh solid #D9D9D9;
+    border-top: 0px solid transparent;
+    position: absolute;
+    right: 2.7vh;
+}
+
+.MenuPerfil .Apuntador .TrianguloInterno{
+    width: 0;
+    height: 0;
+    border-right:2vh solid transparent;
+    border-left: 2vh solid transparent;
+    border-bottom: 2.7vh solid #FFFFFF;
+    border-top: 0px solid transparent;
+    position: absolute;
+    top: 0.3vh;
+    right: 3vh;
+}
+
+.Cuenta, .Historial, .Idioma, .Comparaciones, .CerrarSesion{
+    width: 100%;
+    height: 17.5%;
+    display: flex;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.Cuenta{
+    margin-top: 6.5%;
+}
+
+.MenuPerfil .CerrarSesion{
+    margin-top: 2.5%;
+    height: 19%;
+    border-top: 0.2vh solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MenuPerfil .CerrarSesion>p{
+    color: #6D53FC;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.MenuPerfil .Icono{
+    margin-left: 5%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    cursor: default;
+}
+
+.MenuPerfil .Texto{
+    padding-left: 5%;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.MenuPerfil .Texto>p{
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
