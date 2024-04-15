@@ -197,3 +197,11 @@
     grid-template-columns: repeat(auto-fill, 17.5vh); /* Ancho fijo para cada icono de archivo */
     grid-gap: 5vh; /* Espacio entre iconos */
 }
+
+.file-icon.upload-icon {
+    font-size: 5.5em;
+    color: #a1a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
